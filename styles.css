@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: white;
+}
+
+.section {
+    height: 100%;
+    /* width: 100vw; */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.bar {
+    padding-right: 2em;
+    background: white;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 1em;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.main-nav li {
+    padding-right: 18px;
+    padding-left: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3E3E3E;
+    transition: 0.3s;
+
+}
+
+.main-nav li:not(:first-child) {
+    padding-top: 15px;
+
+}
+
+.main-nav li:hover {
+    background-color: #F4F4F4;
+}
+
+.main-nav li:nth-child(1) {
+    background-color: #fff;
+}
+
+.gdg-img {
+    width: 80px;
+    height: 50px;
+    padding-top: 0px;
+}
+
+a {
+    color: #3E3E3E;
+    text-decoration: none;
+}
+
+.side {
+    margin-right: auto;
+}
+
+#bg {
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+#landing {
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./assets/GDGBG-01.svg);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#landing .title {
+    text-align: center;
+    width: 80%;
+    padding-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 95px;
+    font-weight: 600;
+}
+
+
+
+#landing .by {
+    width: 40%;
+    text-align: right;
+    font-weight: 600;
+    margin-bottom: 70px;
+    color: #3E3E3E;
+}
+
+#landing .dates {
+    width: 40%;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 70px;
+    font-size: 30px;
+    color: #3E3E3E;
+}
+
+.title span {
+    margin: -2px;
+}
+
+.f1 {
+    font-size: 105px;
+}
+
+.f2 {
+    font-size: 105px;
+}
+
+#landing .button {
+
+    border: none;
+    color: #0F9D58;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 13px;
+}
+
+#landing .reg1 {
+    font-weight: 500;
+    border: 1.5px solid #0F9D58;
+    border-radius: 5px;
+
+}
+
+#landing .reg1:hover {
+    background-color: #0F9D58;
+    color: white;
+}
+
+
+.section-1 hr,
+.section-2 hr {
+    background-color: #8ECBED;
+    width: 40%;
+    height: 2px;
+    border-style: none;
+    margin: 0.5em auto;
+    margin-bottom: 2em;
+}
+
+.about-heading {
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+}
+
+.about-content {
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    color: white;
+    font-weight: 400;
+    text-align: left;
+}
+
+.section-1,
+.section-2 {
+    width: 70%;
+    height: 100vh;
+    margin: 4em auto 2em;
+    text-align: center;
+}
+
+.section-1 {
+    background-color: #3E7DED;
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 10px;
+}
+
+.section-2 {
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 10px;
+}
+
+.IF-heading {
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: #3E3E3E;
+    font-weight: 600;
+}
+
+.IF-content {
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    color: #3E3E3E;
+    font-weight: 500;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+}
+
+.IF-list img {
+    max-width: 5vw;
+}
+
+.horizontal-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-icon ul {
+    padding-inline-start: 0px;
+}
+
+.IF-list {
+    font-size: 20px;
+    margin-top: 3em;
+    font-weight: 500;
+    color: #3E3E3E;
+}
+
+.category-icons img {
+    margin-bottom: 0.8em;
+}
+
+.wtm-img {
+    padding-top: 6em;
+    clear: left;
+    width: 49%;
+    height: 70%;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.textforimg {
+    padding-left: 6em;
+    padding-top: 6em;
+    padding-right: 6em;
+    text-align: center;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.wtm-track1 {
+    height: 700px;
+    background-color: #CAEDFC;
+    display: flex;
+    padding: 20px;
+}
+
+.wtm-track2 {
+    height: 700px;
+    background-color: #E6C9EB;
+    display: flex;
+    padding: 20px;
+}
+
+.textforimg2 {
+    padding-left: 6em;
+    padding-top: 10em;
+    padding-right: 6em;
+    align-items: right;
+}
+
+.textforimg1 {
+    padding-left: 6em;
+    padding-top: 10em;
+    padding-right: 6em;
+    align-items: right;
+}
+
+.img {
+
+    border-radius: 25px;
+    border: 2px;
+
+    width: 320px;
+    height: 280px;
+    text-align: center;
+    margin: 30px;
+    margin-top: 90px;
+    text-align: center;
+    padding: 40px;
+}
+
+#flutterimg {
+    background-color: white;
+
+}
+
+#arlogos {
+    background-color: white;
+}
+
+#pylogo {
+    background-color: white;
+}
+
+#tenselogo {
+    background-color: white;
+}
+
+#flutterimg>img {
+    width: 200px;
+}
+
+.bg0 {
+    background-color: #0085c3;
+    padding: 50px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.gifoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.img {
+    z-index: 1;
+}
+
+.content {
+    z-index: 1;
+}
+
+.gifoverlay img {
+    width: 100vw;
+}
+
+.bg1 {
+    background-color: #af4ec1;
+    padding: 50px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bg2 {
+    background-color: #ce0814;
+    padding: 50px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.bg3 {
+    background-color: #f7be4a;
+    padding: 50px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+.img img {
+    width: 200px;
+}
+
+.content {
+    width: 60%;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
+
+.bg0 .content {
+    color: white;
+}
+
+
+.bg1 .content {
+    color: white;
+}
+
+.content p {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+
+.bg4 {
+    background-color: #191919;
+    padding-bottom: 50px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 300px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.logorow {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#wtm {
+    width: 200px;
+    height: 200px;
+}
+
+#dsc {
+    width: 200px;
+    height: 200px;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(.9);
+    }
+
+    20% {
+        transform: scale(1.1);
+    }
+
+    40% {
+        transform: scale(.9);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    80% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(.9);
+    }
+}
+
+#heart {
+    color: #DB3143 !important;
+    font-size: 1.5vw;
+    animation: heartbeat 1s infinite;
+}
+
+.bg4 p {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+
+@media(max-width:600px) {
+    .gdg-img {
+        width: 40px;
+        height: 25px;
+        margin-left: -30px;
+        margin-top: 10px;
+    }
+
+    .main-nav li {
+        margin: 5px;
+        padding-right: 1px;
+        padding-left: 1px;
+        font-weight: 600;
+        font-size: 10px;
+
+    }
+
+
+
+
+    #landing .title {
+        margin-top: -250px;
+        font-size: 55px;
+        font-weight: 600;
+    }
+
+
+
+    #landing .by {
+        width: 40%;
+        text-align: right;
+        font-weight: 600;
+        margin-bottom: 70px;
+        color: #3E3E3E;
+    }
+
+    .title span {
+        margin: -2px;
+    }
+
+    .f1 {
+        font-size: 75px;
+    }
+
+    .f2 {
+        font-size: 75px;
+    }
+
+    #landing .reg1 {
+        background: white;
+    }
+
+    .about-heading {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .about-content {
+        font-size: 13px;
+
+    }
+
+    .IF-heading {
+        margin-top: 0px;
+        font-size: 25px;
+    }
+
+    .IF-content {
+        font-size: 13px;
+    }
+
+    .horizontal-list {
+        flex-direction: column;
+    }
+
+    .category-icons {
+        margin-bottom: 15px;
+        flex-direction: row;
+    }
+
+
+    .img {
+        width: 220px;
+        height: 220px;
+        margin: 0px;
+        margin-top: -20px;
+    }
+
+    .bg0 {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .bg1 {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .bg2 {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .bg3 {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+
+    .content {
+        font-size: 13px;
+        width: 80%;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .img img {
+        width: 150px;
+    }
+
+    #flutterimg>img {
+        width: 140px;
+    }
+
+    .gifoverlay img {
+        width: 300vw;
+    }
+
+    #wtm {
+        width: 100px;
+        height: 100px;
+    }
+
+    #dsc {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bg4 {
+
+        padding: 0px;
+        text-align: center;
+    }
+
+
+    .logorow {
+        margin-top: 90px;
+        margin-bottom: -250px;
+    }
+
+    #heart {
+        font-size: 30px;
+    }
+}
+
+
+
+@media(max-width:400px) and (max-height:850px) {
+    #landing .title {
+        margin-top: -250px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .f1 {
+        font-size: 55px;
+    }
+
+    .f2 {
+        font-size: 55px;
+    }
+}
