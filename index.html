@@ -19,6 +19,9 @@
   </script>
   <script>
     $(document).ready(function () {
+      setTimeout(function () {
+        $("body").addClass("loaded");
+      }, 3000);
       // Add smooth scrolling to all links
       $("a").on('click', function (event) {
 
@@ -46,6 +49,19 @@
 </head>
 
 <body class="body">
+  <div id="loader-wrapper">
+    <div class="container">
+      <div class="top-left"></div>
+      <div class="top-right"></div>
+      <div class="bottom-left"></div>
+      <div class="bottom-right"></div>
+    </div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+  </div>
+
   <div class="wrapper">
     <div class="section" id="bg">
       <nav class="bar">
@@ -96,7 +112,8 @@
         <br><br>
         Track 2 will follow a hands-on approach to learn about Mobile App Development and Augmented Reality. The first
         session of this track will introduce the attendees to the basics of App Development, Material Design, and
-        Flutter. This will be followed by a session on Augmented Reality where attendees will use Google's ARCore SDK to
+        Flutter. This will be followed by a session on Augmented Reality where attendees will use Google's ARCore SDK
+        to
         develop AR applications with Flutter.</p>
     </div>
     <div class="section-2" id="Install">
@@ -152,7 +169,8 @@
           <div class="content">
             <p>TRACK 1: Keras</p>
             Keras is a high-level neural networks API, written in Python and capable of running on top of TensorFlow,
-            CNTK, or Theano. It was developed with a focus on enabling fast experimentation. The motivation behind using
+            CNTK, or Theano. It was developed with a focus on enabling fast experimentation. The motivation behind
+            using
             Keras is to be able to go from idea to result with the least possible delay.
           </div>
         </div>
@@ -170,7 +188,8 @@
           <div class="content">
             <p>TRACK 1: Tensorflow</p>
             TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible
-            ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML
+            ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in
+            ML
             and developers easily build and deploy ML powered applications.
           </div>
         </div>
