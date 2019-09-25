@@ -176,7 +176,7 @@ a {
 }
 
 .about-heading {
-    margin-top: 50px;
+    margin-top: 0px;
     font-size: 40px;
     text-align: center;
     color: white;
@@ -190,6 +190,7 @@ a {
     color: white;
     font-weight: 400;
     text-align: left;
+
 }
 
 .section-1,
@@ -203,8 +204,8 @@ a {
 .section-1 {
     background-color: #3E7DED;
     width: 100%;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
     padding-top: 10px;
 }
 
@@ -411,7 +412,7 @@ li {
     font-weight: 500;
     text-align: left;
     padding-left: 30px;
-    padding-top: 30px;
+    padding-top: 95px;
 
 }
 
@@ -552,12 +553,13 @@ li {
     }
 
     .about-heading {
-        margin-top: 20px;
+        margin-top: 0px;
         font-size: 25px;
     }
 
     .about-content {
-        font-size: 13px;
+        margin-top: -10px;
+        font-size: 12px;
 
     }
 
@@ -568,6 +570,7 @@ li {
 
     .IF-content {
         font-size: 13px;
+        text-align: center;
     }
 
     .horizontal-list {
@@ -584,7 +587,7 @@ li {
         width: 220px;
         height: 220px;
         margin: 0px;
-        margin-top: -20px;
+        margin-top: 10px;
     }
 
     .bg0 {
@@ -613,10 +616,11 @@ li {
 
 
     .content {
-        font-size: 13px;
-        width: 80%;
+        font-size: 15px;
+        width: 90%;
         text-align: center;
         padding-left: 0px;
+        margin-top: -80px;
     }
 
     .img img {
@@ -628,7 +632,8 @@ li {
     }
 
     .gifoverlay img {
-        width: 300vw;
+        width: 350vw;
+        margin-right: 800px;
     }
 
     #wtm {
@@ -655,6 +660,11 @@ li {
 
     #heart {
         font-size: 30px;
+    }
+
+    .content p {
+        font-size: 20px;
+
     }
 }
 
